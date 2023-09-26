@@ -17,3 +17,4 @@
 - code: [trafic-light-plus](./trafic-light-plus/trafic-light-plus.ino)
 - circuit:
     -  <image src="./circuit/trafic-light-plus.png" height="300px"/>
+    -  <image src="./circuit/trafic-light-plus-real.png" height="400px"/>
