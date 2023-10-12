@@ -38,6 +38,6 @@ void loop() {
       yellowLedState = HIGH;
     }
     digitalWrite(yellowLedPin, yellowLedState);
-    delay(0.1 * SECOND);
+    delay(YELLOW_BLINK_INTERVAL);
   }
 }

@@ -1,5 +1,41 @@
 # NOTE
 
+## Lab 3 note
+
+### pwm: 模擬呼吸燈
+
+- Pulse Width Modulation (PWM)，脈衝寬度調製，簡稱脈寬調製。
+- PWM 信號仍然是數位的，因為在給定的任何時刻，直流供電要麼是 3.3V（ON），要麼是 0V（OFF） 。
+- 輸出電壓 =（接通時間/脈衝時間）\* 最大電壓值
+- PWM 週期要短才有效
+- 使用 ESP32 ADC pins
+
+### dht11: 溫溼度感測器
+
+### ultrasonic: HC-SR04 超聲波感測器
+
+- measure distance
+- 使用 HC-SR04
+- 距離測量物體不可以太近、太遠、角度太大、材質需能反彈聲波
+  - 距離太近會無法沒辦法將訊號反射到接受器，
+  - 距離太遠則會因為訊號衰減或受到干擾，導致超音波回傳。
+- (單程)距離 = 時間 \* 0.34 / 2 =時間 / 58.2
+
+## Lab 2 note
+
+### 按鍵開關
+
+Bounce (彈跳、震盪)：
+
+- Pushbuttons often generate spurious open/close transitions when pressed, due to mechanical and physical issues.
+- These transitions may be read as multiple presses in a very short time fooling the program.
+- ![bounce](./assests/bounce.png)
+
+### Debounce (反彈跳)
+
+- 可以用 delay 一段時間躲過但這方法不好，Ex: [lab2-state-change-detection](./lab2/state-change-detection/StateChangeDetection.ino)
+- 改進：`millis() - lastDebounceTime`，Ex: [lab2-debounce](./lab2/Debounce/Debounce.ino)
+
 ## Lab 1 note
 
 ### delay  的缺點
@@ -11,8 +47,8 @@
 
 https://www.arduino.cc/en/Tutorial/BuiltInExamples/BlinkWithoutDelay
 
-| Turns on and off a light emitting diode (LED) connected to a digital pin, without using the `delay()` function.
-| This means that other code can run at the same time without being interrupted by the LED code.
+> Turns on and off a light emitting diode (LED) connected to a digital pin, without using the `delay()` function. \
+> This means that other code can run at the same time without being interrupted by the LED code.
 
 The code below uses the `millis()` function, a command that returns the number of milliseconds since the board started running its current sketch, to blink an LED.
 
@@ -50,3 +86,8 @@ void loop() {
 }
 
 ```
+
+### LAB 0 note
+
+ESP32-S3-WROOM CAM
+![ESP32-S3](./assests/esp32s3.png)
