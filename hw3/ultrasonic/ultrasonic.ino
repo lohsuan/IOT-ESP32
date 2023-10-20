@@ -1,3 +1,8 @@
+//   系所：資科工碩一 | 學號：312551105  | 姓名：羅羽軒
+// (1)超過20 公分時，不亮燈。
+// (2)10 ~ 20 公分時，低速閃爍LED 。 
+// (3)低於10 公分時，高速閃爍LED 。
+
 const int trigPin = 2;
 const int echoPin = 11;
 const int redLedPin = 46;

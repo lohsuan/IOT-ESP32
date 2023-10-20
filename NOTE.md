@@ -1,5 +1,14 @@
 # NOTE
 
+## Lab 4 note
+
+
+### Serial Port
+
+
+### LCD with I2C
+
+
 ## Lab 3 note
 
 ### pwm: 模擬呼吸燈
