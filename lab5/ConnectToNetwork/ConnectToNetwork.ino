@@ -1,6 +1,6 @@
 #include <WiFi.h>
-char ssid[] = "24-5F"; //SSID of your network
-char pass[] = "0978915399"; //password of your WPA Network
+char ssid[] = ""; //SSID of your network
+char pass[] = ""; //password of your WPA Network
 
 void setup() {
   Serial.begin(115200);

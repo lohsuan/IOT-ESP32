@@ -2,8 +2,8 @@
 #include "time.h"
 
 // set your wifi’s ssid and password const char* ssid = "YOUR_SSID";
-const char* ssid = "hsuan";
-const char* password = "yuhsuanya";
+const char* ssid = "";
+const char* password = "";
 
 // the address of the  NTP Server 
 const char* ntpServer = "time.stdtime.gov.tw";
