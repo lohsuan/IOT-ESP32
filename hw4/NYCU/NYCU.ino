@@ -1,4 +1,6 @@
 //   系所：資科工碩一 | 學號：312551105  | 姓名：羅羽軒
+// 使用 LCD 顯示 “I LOVE NYCU”，其中的 LOVE 改用愛心符號表示
+// 同時需要每秒改變一次顯示的黑白對比 
 
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
@@ -30,8 +32,8 @@ byte nBitmap[8]= {
 
 byte yBitmap[8]= {
   B01110,
+  B01110,
   B10101,
-  B11011,
   B11011,
   B11011,
   B11011,
@@ -69,14 +71,14 @@ byte loveBitmap[8]= {
   B00000 }; // love
 
 byte whiteLoveBitmap[8]= {
-  B11111,
-  B10101,
-  B01010,
+  B00000,
   B01010,
   B10101,
-  B11011,
-  B11111,
-  B11111 }; // white love
+  B10101,
+  B01010,
+  B00100,
+  B00000,
+  B00000 }; // white love
 
 void setup() {
   Wire.begin(I2C_SDA, I2C_SCL);
@@ -100,7 +102,7 @@ void loop() {
    if (contrast) {
     lcd.write(0);
     lcd.print(" ");
-    lcd.write(5);
+    lcd.write(6);
     lcd.print(" ");
     lcd.write(1);
     lcd.write(2);
@@ -110,7 +112,7 @@ void loop() {
   else {
     lcd.print("I");
     lcd.print(" ");
-    lcd.write(6);
+    lcd.write(5);
     lcd.print(" ");
     lcd.print("NYCU");
   }
