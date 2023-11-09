@@ -1,5 +1,10 @@
 # NOTE
 
+## Lab 7 note
+
+### Buzzer, Water Level Sensor, and Photoresistor
+
+
 ## Lab 6 note
 
 ### Wifi, AP Mode
