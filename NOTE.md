@@ -1,5 +1,14 @@
 # NOTE
 
+## Lab 6 note
+
+### Wifi, AP Mode
+
+When you set the ESP32 as an access point (hotspot), it allows you to connect to the ESP32 using any Wi-Fi-enabled device without requiring a connection to your router.
+
+### Web Server
+Using Web Sever to Control ESP32
+
 ## Lab 4 note
 
 
